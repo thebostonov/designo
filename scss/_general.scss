@@ -8,6 +8,8 @@ html{
 *::after,
 *::before{
     box-sizing: inherit;
+    text-decoration: none;
+    list-style: none;
 }
 
 body{

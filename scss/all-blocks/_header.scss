@@ -1,0 +1,99 @@
+.header{
+    padding: 64px 0px;
+    &__container{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo{
+        flex-shrink: 0;
+    }
+    &__logo:hover{
+        opacity: 0.7;
+    }
+    &__logo:active{
+        opacity: 0.5;
+    }
+    &__nav{
+        display: flex;
+        align-items: center;
+        white-space: nowrap;   
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    &__item + &__item{
+        margin-left: 42px;
+    }
+    &__link {
+        font-family: 'Jost';
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        color: #333136;
+    }
+    &__link:hover{
+        letter-spacing: 2px;
+        text-decoration-line: underline;
+        color: #333136;
+    }
+    &__link:active{
+        opacity: 0.5;
+    }
+    &__hamburger{
+        display: none;
+        width: 16px;
+        height: 15px;
+        background-image: url("../../images/bars-solid.svg");
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+    }
+}
+@media only screen and(max-width:664px){
+
+    .header{
+        position: relative;
+        &__logo-img{
+            width: 163px;
+            height: 18px;
+        }
+        &__hamburger {
+            display: inline-block;
+        }
+    
+        &__nav {
+            display: none;
+        }
+        &__item + &__item {
+            margin-left: 0px;
+        }
+    }  
+    .header--open .header__nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: dodgerblue;
+    }
+  
+    .header--open .header__list {
+        flex-direction: column;
+    }
+    .header--open .header__item{
+        align-self: center;
+    }
+    .header--open .header__link {
+        color: white;
+    }
+  
+    .header--open .header__hamburger {
+        background-image: url("../images/times-solid.svg");
+    }
+
+}
