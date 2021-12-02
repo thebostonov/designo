@@ -3,6 +3,7 @@
     &__container{
         display: flex;
         justify-content: space-between;
+       
     }
     &__logo{
         flex-shrink: 0;
@@ -44,6 +45,7 @@
         opacity: 0.5;
     }
     &__hamburger{
+        align-self: center;
         display: none;
         width: 16px;
         height: 15px;
@@ -57,6 +59,8 @@
 
     .header{
         position: relative;
+        padding: 35px 0px;
+
         &__logo-img{
             width: 163px;
             height: 18px;
@@ -79,7 +83,7 @@
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: dodgerblue;
+        background-color: #E7816B;
     }
   
     .header--open .header__list {

@@ -1,0 +1,118 @@
+.services{
+    &__list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 350px;
+    }
+    &__item + &__item{
+        margin-left: 30px;
+    }
+    &__image{
+        margin-bottom: 48px;
+    }
+    &__item-textbox {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    &__item-heading {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 32px;
+        font-family: 'Jost';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 5px;
+        color: #333136;
+    }
+    &__item-desc {
+        margin: 0;
+        padding: 0;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: #333136;     
+    }
+}
+@media only screen and (max-width:785px){
+    .services{
+        &__list{
+            flex-direction: column;
+        }
+        &__item{
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 32px;
+            width: 100%;
+            max-width: 729px;
+        }
+        &__item + &__item{
+            margin-left: 0px;
+        }
+        &__image{
+            margin-bottom: 0;
+            margin-right: 48px;
+        }
+        &__item-textbox{
+            flex-grow: 1;
+        }
+        &__item-heading{
+            text-align: start;
+        }
+        &__item-desc{
+            text-align: start;
+        }
+    }
+}
+@media only screen and (max-width:575px){
+    .services{
+        &__item{
+            margin-bottom: 40px;
+        }
+        &__item + &__item{
+            margin-left: 0px;
+        }
+        &__image{
+            margin-right: 40px;
+        }
+        &__item-textbox{
+            flex-grow: 1;
+        }
+        &__item-heading{
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        &__item-desc{
+            text-align: center;
+        }
+        
+    }
+}
+@media only screen and (max-width:480px){
+    .services{
+        &__item{
+            flex-direction: column;
+            margin-bottom: 80px;
+        }
+        &__image{
+            margin-right: 0px;
+            margin-bottom: 48px;
+        }
+        &__item-heading{
+            margin-bottom: 32px;
+        }
+    }
+}
+

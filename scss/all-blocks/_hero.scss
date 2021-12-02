@@ -1,0 +1,198 @@
+.hero{
+    
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 95px;
+        padding-top: 139px;
+        background: #E7816B;
+        border-radius: 15px;
+        position: relative;
+    }
+    &__textbox{
+        display: flex;
+        flex-direction: column;
+        max-width: 540px;
+        width: 100%;
+        margin-right: 10px;
+    }
+    &__heading{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 11px;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 48px;
+        color: #FFFFFF;      
+    }
+    &__desc{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 40px;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FFFFFF;     
+    }
+    &__circle{
+        width: 640px;
+        height: 640px;
+        border-radius: 50%;
+        background: linear-gradient(90deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.497569) 100%);
+        mix-blend-mode: normal;
+        opacity: 0.31;
+        transform: matrix(0, -1, -1, 0, 0, 0);   
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &__bg{
+       display: inline-block;
+    }
+   
+}
+// HERO OF MEDIA CODES HAS BEEN WRITTEN FOR MAX-WIDTH:995PX.
+@media only screen and (max-width:955px){
+    .hero{
+        &__container{
+            padding: 0px 75px;    
+            padding-top: 139px;  
+        }
+    }
+}
+@media only screen and (max-width:913px){
+    .hero{
+        &__container{
+            padding: 0px 55px;    
+            padding-top: 139px;  
+        }
+    }
+}
+@media only screen and (max-width:875px){
+    .hero{
+        &__container{
+            padding: 0px 35px;    
+            padding-top: 139px;  
+        }
+    }
+}
+@media only screen and (max-width:830px){
+    .hero{
+        &__container{
+            padding: 0px 20px;    
+            padding-top: 139px;  
+        }
+    }
+}
+// HERO-TABLET OF MEDIA CODES HAS BEEN WRITTEN FOR MAX-WIDTH:785PX.
+@media only screen and (max-width:785px){
+    .hero{
+        &__container{
+            justify-content: start;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px 58px;
+            padding-top: 60px;
+            position: relative;
+        }
+        &__textbox{
+            text-align: center;
+            margin-bottom: 70px;
+            margin-right: 0px;
+        }
+        &__circle{
+            display: none;
+            // top: 100px;
+            // right: -100px;
+        }
+        &__heading{
+            margin-bottom: 10px;
+        }
+        &__desc{
+            margin-bottom: 20px;
+        }
+        &__bg{
+            display: none;
+        }
+        &__tablet-bg{
+            display: inline-block;  
+            width: 100%;
+            max-width: 284px;
+            height: 388px;
+            background-image:url("../images/heroback.png");
+            background-repeat:no-repeat;
+            background-size: 284px 388px;
+            object-fit: contain;
+            background-position: center center;
+        }
+    }    
+}
+@media only screen and (max-width:654px){
+    .hero{
+        &__container{
+            padding-top: 60px;
+        }
+        &__textbox{
+            margin-bottom: 60px;
+        }
+        &__heading{
+            font-size: 40px;
+            line-height: 40px;
+        }
+        &__desc{
+            font-size: 15px;
+            line-height: 25px;   
+        }
+    }
+}
+@media only screen and (max-width:580px){
+    .hero{
+        &__container{
+            padding: 60px 25px 0px 25px;
+        }
+    }
+}
+@media only screen and (max-width:431px){
+    .hero{
+        &__heading{
+            font-size: 35px;
+            line-height: 35px; 
+            margin-bottom: 14px;     
+        }
+    }
+}
+@media only screen and (max-width:431px){
+    .hero{
+        &__container{
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+    }
+}
+@media only screen and (max-width:380px){
+    .hero{
+        .container{
+            padding: 0;
+        }
+        &__container{
+            border-radius: 0px;
+        }
+        &__textbox{
+            margin-bottom: 80px;
+        }
+        &__heading{
+            font-size: 32px;
+            line-height: 36px; 
+            margin-bottom: 14px;     
+        }
+        &__desc{
+            margin-bottom: 24px;
+        }
+    }
+}
+
+
